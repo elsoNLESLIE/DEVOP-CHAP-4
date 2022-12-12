@@ -1,0 +1,45 @@
+
+name : 
+      inputs:
+     # define here your inputs 
+        choice_input:
+          description: " Choice type input"
+          default: "frist"
+          type: choice
+          options:
+              - jedi
+              - sith
+              - rebel
+
+        string_input:
+          description: " String type input"
+          type: string
+          default : "username"
+        
+          string_input :
+            description: " String type input"
+            type: string
+            default : "level"
+
+jobs:
+  loog-the-inputs :
+    runs-on: ubuntu-latest
+    steps:
+        - run:
+            echo "choice" :${{inputs.choice_input}} "
+            echo "string" :${{inputs.string_input}} "
+            echo "string" :${{inputs.string_input}} "
+
+        
+      
+
+
+     
+
+
+    
+
+   
+ 
+
+
